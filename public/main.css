@@ -1,0 +1,51 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: whitesmoke;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+form{
+    margin: 0 auto;
+    display: inline; 
+}
+h1{
+    text-align: center;
+  }
+/* gets rid of outline when click on inputs */
+  *:focus {
+    outline: none;
+}
+
+input{
+    
+    height: 26px;
+    border-color: rgb(60, 60, 150);
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input,button:hover{
+    color: red;
+}
+
+button{
+    border-radius: 10px;
+    height: 30px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border-color: rgb(60, 60, 150);
+    color: rgb(60, 60, 150);
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+p{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+}
