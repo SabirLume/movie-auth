@@ -3,11 +3,12 @@ body{
     background: whitesmoke;
     width: 80%;
     margin: 0 auto;
-    text-align: center;
+    
 }
 form{
     margin: 0 auto;
     display: inline; 
+    text-align: center;
 }
 h1{
     text-align: center;
@@ -49,3 +50,9 @@ p{
     padding-top: 20px;
     
 }
+li, ul{
+    list-style: none;
+  }
+h2{
+    display: inline;
+  }

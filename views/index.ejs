@@ -11,17 +11,31 @@
 </head>
 <body>
     <h1>Movie Search</h1>
-    <form >
-        <input type="text" value="" placeholder="Movie Title"></input>
-        <button id= 'search'>Search</button>
-        <button id= 'save'>Save</button>
+    <form action="/movie" method="POST">
+        <input type="text" value="" placeholder="Movie Title" name="msg"></input>
+        <button id= 'search'>Search</button> 
     </form>
-
+    <button id= 'save'>Save</button>
     <p class='print'>
 
     </p>
+
     <ul>
-        <li></li>
+            <% for(var i=0; i<movies.length; i++) {%>
+        
+                        
+                        <li><h2>Title: </h2><%= movies[i].movieInfo.title %></li>
+                        
+                        <li><h2>Rating: </h2><%= movies[i].movieInfo.rated %></li>
+                        
+                        <li><h2>Release Date: </h2><%= movies[i].movieInfo.released %></li>
+                        
+                        <li><h2>Actors: </h2><%= movies[i].movieInfo.actors %></li>
+                        
+                        <li><h2>Plot: </h2><%= movies[i].movieInfo.plot %></li>
+   
+                    <% } %>
+                    
     </ul>
 
     
